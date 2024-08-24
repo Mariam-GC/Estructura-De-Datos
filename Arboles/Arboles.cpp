@@ -1,1 +1,0 @@
-La funcion de eliminar se utiliza con el valor de posocion
