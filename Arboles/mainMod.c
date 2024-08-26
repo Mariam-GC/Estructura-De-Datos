@@ -15,7 +15,7 @@ int buscar(int valor);
 int maximo(int i);
 int minimo(int i);
 int eliminar(int valor, int i);
-void cargarDesdeArchivo(const char *nombreArchivo);
+void cargarDesdeArchivo(const char *datos100);
 
 int main(int argc, const char *argv[]) {
     int opc, valor, r;
@@ -168,8 +168,8 @@ int eliminar(int valor, int i) {
     }
 }
 
-void cargarDesdeArchivo(const char *nombreArchivo) {
-    FILE *archivo = fopen(nombreArchivo, "r");
+void cargarDesdeArchivo(const char *datos100) {
+    FILE *archivo = fopen(datos100, "r");
     if (archivo == NULL) {
         perror("Error al abrir el archivo");
         exit(EXIT_FAILURE);
